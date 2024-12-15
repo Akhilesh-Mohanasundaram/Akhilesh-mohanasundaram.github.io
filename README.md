@@ -72,17 +72,3 @@ Developed by:
 Ridhu Pharan, 2nd Year B.Tech, Electronics and Communications, Amrita Vishwa Vidyapeetham, Coimbatore, Competitive Programmer, Passionate about IOT, Data Science, and Software Development.
 Akhilesh Mohanasundaram, 2nd Year B.Tech, Computer Science with AI, Amrita Vishwa Vidyapeetham, Coimbatore, AI enthusiast, Passionate about Machine Learning, Data Science, and Software Development.
 specializing in web development and responsive design.
-
----
-
-## License
-This project is licensed under the MIT License - feel free to use and modify it for personal or commercial purposes.
-
----
-
-## Feedback
-If you have any suggestions or encounter issues, feel free to reach out. Your feedback is valuable!
-
----
-
-This README provides all necessary details for users to understand, run, and potentially improve the project. Let me know if you want to add anything specific!
