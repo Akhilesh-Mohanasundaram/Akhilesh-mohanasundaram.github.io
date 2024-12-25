@@ -5,24 +5,42 @@ body {
 }
 
 header {
-    background: #f8f9fa;
+    background: linear-gradient(60deg,#0a1175, #a1bad4);
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(13, 13, 13, 0.607);
+    position: fixed; /* Make the nav bar fixed */
+    top: 0; /* Stick to the top */
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%; /* Full width */
+    height: 50px;
+    padding: 10px 20px;
+    margin-top: 0;
 }
+
+body {
+    margin-top: 60px;
+}
+
 
 .logo {
     font-size: 20px;
     font-weight: bold;
+    color: #fff;
+    text-shadow: white;
 }
 
 .nav-menu {
     list-style: none;
     display: flex;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    justify-content: center;
+    flex: 1;
 }
 
 .nav-menu li {
@@ -31,16 +49,50 @@ header {
 
 .nav-menu a {
     text-decoration: none;
-    color: #333;
+    color: #ffffff;
+}
+
+.nav-right {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-btn {
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #ff6b6b, #f3a683);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nav-btn:hover {
+    background: #0056b3;
+}
+
+.contact-now {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #ff6b6b, #f3a683);
+    color: #fff;
+    height: 48px;
+    width: 170px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-now:hover {
+    background: #162a74;
 }
 
 .hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
     color: #fff;
     position: relative;
+    height: 530px
 }
 
 .hero img {
@@ -54,7 +106,7 @@ header {
 .hero-content {
     flex: 1;
     text-align: left;
-    padding: 20px;
+    padding: 30px;
 }
 
 .hero-content h1 {
@@ -72,9 +124,10 @@ header {
 .form-container {
     flex: 0 0 350px;
     background: rgba(255, 255, 255, 0.9);
-    padding: 20px;
+    padding: 10px;
+    margin-right: 40px;
     border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 15px rgba(68, 64, 64, 0.621);
 }
 
 .form-container h3 {
@@ -86,7 +139,7 @@ header {
 
 .form-container input,
 .form-container select {
-    width: 100%;
+    width: 340px;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
@@ -95,6 +148,7 @@ header {
 
 .form-container button {
     width: 100%;
+    margin-top: 20px;
     padding: 10px;
     background: linear-gradient(45deg, #ff6b6b, #f3a683);
     color: #fff;
@@ -168,9 +222,9 @@ header {
 }
 
 .left-column {
-    flex: 1;
-    min-width: 300px;
-    max-width: 600px;
+    min-width: 400px;
+    max-width: 540px;
+    padding-left: 120px;
 }
 
 .left-column h2 {
@@ -188,6 +242,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    padding-left: 100px;
     justify-content: flex-start;
     align-items: flex-start;
 }
