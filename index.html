@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kovai Acharyas IAS Academy</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -22,7 +23,6 @@
             <button class="nav-btn">Study Materials</button>
         </div>
     </header>
-    
 
     <div class="hero">
         <img src="./assets/download.jpeg" alt="Hero Image">
@@ -33,7 +33,7 @@
 
         <div class="form-container">
             <h3>Register Here for Admission</h3>
-            <form action="https://docs.google.com/forms/d/e/1FAIpQLSd-MzrglJ5B-Y6ejaHd_GZJr6qEWQGGt8-j6WPJ8my3BPFgCg/formResponse" method="POST" target="_blank">
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLSd-MzrglJ5B-Y6ejaHd_GZJr6qEWQGGt8-j6WPJ8my3BPFgCg/formResponse" method="POST" target="hiddenFrame" onsubmit="showSuccessMessage(event)">
                 <input type="text" id="name" name="entry.1781528243" placeholder="Your Name" required>
                 <input type="email" id="email" name="entry.433196339" placeholder="Your Email" required>
                 <input type="tel" id="phone" name="entry.1758917314" placeholder="Your Phone Number" required>
@@ -56,6 +56,10 @@
                 </select>
                 <button type="submit">Register</button>
               </form>            
+              <iframe name="hiddenFrame" style="display:none;"></iframe>
+              <div id="success-message" class="success-message">
+                Registration Successful !
+              </div>
         </div>
     </div>
 
