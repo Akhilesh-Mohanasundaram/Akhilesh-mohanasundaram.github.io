@@ -33,21 +33,29 @@
 
         <div class="form-container">
             <h3>Register Here for Admission</h3>
-            <form>
-                <input type="text" placeholder="Enter Your Name">
-                <input type="email" placeholder="Your Email">
-                <input type="tel" placeholder="Your Phone Number">
-                <select>
-                    <option>Select District</option>
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLSd-MzrglJ5B-Y6ejaHd_GZJr6qEWQGGt8-j6WPJ8my3BPFgCg/formResponse" method="POST" target="_blank">
+                <input type="text" id="name" name="entry.1781528243" placeholder="Your Name" required>
+                <input type="email" id="email" name="entry.433196339" placeholder="Your Email" required>
+                <input type="tel" id="phone" name="entry.1758917314" placeholder="Your Phone Number" required>
+                <select id="district" name="entry.1446408517" required>
+                  <option value="">Select District</option>
+                  <option value="District 1">District 1</option>
+                  <option value="District 2">District 2</option>
+                  <option value="District 3">District 3</option>
                 </select>
-                <select>
-                    <option>Select Course</option>
+                <select id="course" name="entry.542667275" required>
+                  <option value="">Select Course</option>
+                  <option value="Course A">Course A</option>
+                  <option value="Course B">Course B</option>
+                  <option value="Course C">Course C</option>
                 </select>
-                <select>
-                    <option>Select Mode</option>
+                <select id="mode" name="entry.648733085" required>
+                  <option value="">Select Mode</option>
+                  <option value="Online">Online</option>
+                  <option value="Offline">Offline</option>
                 </select>
                 <button type="submit">Register</button>
-            </form>
+              </form>            
         </div>
     </div>
 
@@ -83,6 +91,46 @@
             </div>
         </div>
     </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Videos</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Address: Kovai Acharyas IAS Academy, Coimbatore, TN, India</p>
+                <p>Email: info@kovaiacharyasiasacademy.com</p>
+                <p>Phone: +91 123 456 7890</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <ul class="social-links">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Youtube</a></li>
+                </ul>
+                <div class="social-icons">
+                    <a href="#"><img src="./assets/facebook.png" alt="Facebook" class="social-icon"></a>
+                    <a href="#"><img src="./assets/instagram.jpeg" alt="Instagram" class="social-icon"></a>
+                    <a href="#"><img src="./assets/linkedin.png" alt="LinkedIn" class="social-icon"></a>
+                    <a href="#"><img src="./assets/youtube.png" alt="Youtube" class="social-icon"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Kovai Acharyas IAS Academy. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
 
 </body>
 </html>
